@@ -128,6 +128,19 @@
       "dependencies": ["autorun", "every-minute"],
       "steps": ["json def.json def.json"]
     },
+    "download": {
+      "description": "yep",
+      "tags": ["nothing", "something"],
+      "repo": "https://github.com/craigcomstock/policy-utilities",
+      "by": "https://github.com/craigcomstock",
+      "version": "0.0.1",
+      "commit": "d0ffe0f431b028cc8ee06d714aa017236018912e",
+      "subdirectory": "policy-utilities",
+      "steps": [
+        "copy ./download.cf policy-utilities/download.cf",
+        "json ./include.json def.json"
+      ]
+    },
     "every-minute": {
       "description": "Make policy fetching, evaluation, and reporting happen every minute",
       "tags": ["management", "experimental"],
